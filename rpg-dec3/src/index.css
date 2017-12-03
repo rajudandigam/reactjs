@@ -1,0 +1,76 @@
+/* Standard Elements */
+body{
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+input {
+	border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+button {
+	display: block;
+    margin: 10px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    background-color: #92ef92;
+    border: 1px solid #afe4af;
+}
+
+
+/* Custom Classes */
+
+.navbar {
+	left: 0;
+	margin: 0;
+	background-color: #333;
+}
+.navbar a {
+	display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover:not(.active) {
+    background-color: #111;
+}
+
+.navbar .active {
+    background-color: #4c9eaf;
+}
+
+/* Dynamic Table Styles */
+
+.dynamic-table {
+	padding: 10px;
+	max-width: 80%;
+	margin: 20px auto;
+	border-radius: 10px;
+    background-color: #ededf3;
+}
+
+/* To Do Container */
+
+.todo-container {
+	padding: 10px;
+	max-width: 80%;
+	margin: 20px auto;
+	border-radius: 10px;
+    background-color: #ededf3;	
+}
+.list-items {
+	border-radius: 10px;
+    background-color: #f9e992;
+    margin: 10px;
+    padding: 10px;
+}
+.task-item {
+	list-style-type: none;
+    padding: 10px 5px;
+    background-color: #f9951e;
+    border: 1px solid #f9e992;
+}
