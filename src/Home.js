@@ -16,6 +16,9 @@ class Home extends React.Component {
 					<li>
 						<a href="/todo">To Do</a>
 					</li>
+          <li>
+						<a href="/todohooks">To Do with Hooks</a>
+					</li>
 				</ul>
 			</div>
 			);
