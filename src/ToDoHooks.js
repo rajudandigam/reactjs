@@ -1,15 +1,17 @@
+import React, { useState } from 'react';
+
 function List({items}) {
   return(
-    <section className="todolist">
-      <ul>
-        {items.map((item, index) => (<li key={index}>{item.text}</li>))}
+    <section>
+      <ul className="list-items">
+        {items.map((item, index) => (<li key={index} className="task-item">{item.text}</li>))}
       </ul>
     </section>
   );
 }
 
 function Form({onSubmit}) {
-  const [text, setText] = React.useState('');
+  const [text, setText] = useState('');
   
   const onSubmitHandler = (e) => {
     e.preventDefault();
@@ -28,12 +30,12 @@ function Form({onSubmit}) {
 }
 
 function ToDoHooks() {
-  const [items, setItems] = React.useState([]);
+  const [items, setItems] = useState([]);
   
   const onSubmit = (text) => setItems([...items, {text}])
   
   return(
-    <article>
+    <article className="todo-container">
       <h2>Todo List App</h2>
 
       <Form onSubmit={onSubmit}/>
