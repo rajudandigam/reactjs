@@ -11,10 +11,10 @@ class Home extends React.Component {
 				<p> Currently it has two components</p>
 				<ul>
 					<li>
-						<h4>Dynamic Table</h4>
+						<a href="/dynamictable">Dynamic Table</a>
 					</li>
 					<li>
-						<h4>To Do</h4>
+						<a href="/todo">To Do</a>
 					</li>
 				</ul>
 			</div>
